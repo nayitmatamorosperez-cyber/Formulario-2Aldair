@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO#2</title>
+</head>
+<body>
+    
+       <h3>FORMULARIO #2</h3>
+
+    <form action="#" method="POST">
+        <table>
+         
+            <tr>
+                <td><label for="nombres">Nombres    :</label></td>
+                <td><input type="text" id="nombres" name="nombres" required></td>
+            </tr>
+
+          
+            <tr>
+                <td><label for="cedula">Numero de cedula:</label></td>
+                <td><input type="text" id="cedula" name="cedula" maxlength="10" required></td>
+            </tr>
+
+          
+            <tr>
+                <td><label for="fecha_nacimiento">Fecha de nacimiento:</label></td>
+                <td><input type="date" id="fecha_nacimiento" name="fecha_nacimiento"></td>
+            </tr>
+
+          
+            <tr>
+                <td><label for="ciudad">Ciudad:</label></td>
+                <td><input type="text" id="ciudad" name="ciudad"></td>
+            </tr>
+
+        
+            <tr>
+                <td><label for="correo">Correo:</label></td>
+                <td><input type="email" id="correo" name="correo"></td>
+            </tr>
+
+        
+            <tr>
+                <td><label for="telefono">Telefono:</label></td>
+                <td><input type="tel" id="telefono" name="telefono" maxlength="10"></td>
+            </tr>
+
+            <tr>
+                <td><label for="direccion">Direccion:</label></td>
+                <td><textarea id="direccion" name="direccion" rows="4" cols="30" required></textarea></td>
+            </tr>
+
+        
+            <tr>
+                <td><label for="estado_civil">Estado civil:</label></td>
+                <td>
+                    <select id="estado_civil" name="estado_civil">
+                        <option value="">Seleccione...</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viudo">Viudo</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="etnia">Etnia:</label></td>
+                <td>
+                    <select id="etnia" name="etnia">
+                        <option value="">Seleccione...</option>
+                        <option value="mestizo">Mestizo</option>
+                        <option value="indigena">Indígena</option>
+                        <option value="afrodescendiente">Afrodescendiente</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="montubio">Montubio</option>
+                        <option value="montubio">Negro</option>
+
+                        <option value="otro">Otro</option>
+                    </select>
+                </td>
+            </tr>
+
+        
+            <tr>
+                <td>Género:</td>
+                <td>
+                    <input type="radio" id="masculino" name="genero" value="Masculino">
+                    <label for="masculino">Masculino</label>
+                    
+                    <input type="radio" id="femenino" name="genero" value="Femenino">
+                    <label for="femenino">Femenino</label>
+                    
+                    <input type="radio" id="otro_genero" name="genero" value="Otro">
+                    <label for="otro_genero">Otro</label>
+                </td>
+            </tr>
+
+ 
+            <tr>
+                <td>Gustos personales:</td>
+                <td>
+                    <input type="checkbox" id="deportes" name="gustos[]" value="Deportes">
+                    <label for="deportes">Deportes</label>
+
+                    <input type="checkbox" id="musica" name="gustos[]" value="Música">
+                    <label for="musica">Música</label>
+
+                    <input type="checkbox" id="Video Juegos" name="gustos[]" value="Video Juegos">
+                    <label for="lectura">Video Juegos</label>
+
+                    <input type="checkbox" id="Gastronomia" name="gustos[]" value="Series Y Peliculas">
+                    <label for="tecnologias">Gastronomia</label>
+
+                    <input type="checkbox" id="otros" name="gustos[]" value="Otros">
+                    <label for="otros">Otros</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="center-buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
